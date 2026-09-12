@@ -1,0 +1,11 @@
+{
+  "model": "MLPClassifier",
+  "total_classes": 146,
+  "test_samples": 2920,
+  "metrics": {
+    "accuracy": 0.1301,
+    "precision": 0.1251,
+    "recall": 0.1301,
+    "f1": 0.1152
+  }
+}

@@ -1,0 +1,704 @@
+[
+  {
+    "id": "CHEST_PAIN",
+    "concept": "I have chest pain",
+    "category": "medical",
+    "intent": "MEDICAL_EMERGENCY",
+    "priority": "critical",
+    "supported": true,
+    "description": "Fist pressed firmly against center chest with distressed facial expression and pulsing hand movement.",
+    "avatarAnimation": "CHEST_PAIN",
+    "suggestedReplies": [
+      "Please sit down immediately. Medical team is coming.",
+      "Are you experiencing pain in your left arm or shortness of breath?",
+      "Take slow, deep breaths. A doctor is on the way."
+    ],
+    "translations": {
+      "en": "I have severe chest pain and need help.",
+      "hi": "मुझे सीने में तेज़ दर्द हो रहा है, तुरंत मदद चाहिए।",
+      "te": "నాకు గుండెలో తీవ్రమైన నొప్పిగా ఉంది, వెంటనే సహాయం కావాలి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "chest_center",
+      "gestureType": "clenched_palm_chest",
+      "movement": "inward_pulse"
+    }
+  },
+  {
+    "id": "BREATHING_DIFFICULTY",
+    "concept": "I cannot breathe properly",
+    "category": "medical",
+    "intent": "MEDICAL_EMERGENCY",
+    "priority": "critical",
+    "supported": true,
+    "description": "Both hands clutching neck or upper chest area with rapid upward motion indicating gasping for air.",
+    "avatarAnimation": "BREATHING_DIFFICULTY",
+    "suggestedReplies": [
+      "Oxygen support is being prepared right now.",
+      "Try to keep your posture straight and take gentle breaths.",
+      "Do you have an inhaler with you?"
+    ],
+    "translations": {
+      "en": "I cannot breathe properly.",
+      "hi": "मुझे सांस लेने में बहुत कठिनाई हो रही है।",
+      "te": "నాకు శ్వాస తీసుకోవడం చాలా కష్టంగా ఉంది."
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "throat_chest",
+      "gestureType": "claw_neck",
+      "movement": "up_down_rapid"
+    }
+  },
+  {
+    "id": "DOCTOR_HELP",
+    "concept": "I need to see a doctor",
+    "category": "medical",
+    "intent": "DOCTOR_REQUEST",
+    "priority": "urgent",
+    "supported": true,
+    "description": "Right hand index and middle finger tapping left inner wrist (pulse point check sign in ISL).",
+    "avatarAnimation": "DOCTOR_HELP",
+    "suggestedReplies": [
+      "The duty doctor will examine you in room 4.",
+      "Please register at counter 1 and take a token.",
+      "Are you experiencing sudden pain or routine consultation?"
+    ],
+    "translations": {
+      "en": "I need to consult a doctor.",
+      "hi": "मुझे डॉक्टर को दिखाना है।",
+      "te": "నేను వైద్యుడిని సంప్రదించాలి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "wrist_tap",
+      "gestureType": "two_finger_pulse",
+      "movement": "tap_twice"
+    }
+  },
+  {
+    "id": "HEADACHE",
+    "concept": "I have a severe headache",
+    "category": "medical",
+    "intent": "MEDICAL_SYMPTOM",
+    "priority": "important",
+    "supported": true,
+    "description": "Both hands touching temples with twisting fingertips indicating throbbing pain.",
+    "avatarAnimation": "HEADACHE",
+    "suggestedReplies": [
+      "How long have you had this headache?",
+      "Are you feeling nauseous or sensitive to light?",
+      "Have you taken any pain relief medicine today?"
+    ],
+    "translations": {
+      "en": "I have a severe headache.",
+      "hi": "मेरे सिर में बहुत तेज़ दर्द है।",
+      "te": "నాకు తల విపరీతంగా నొప్పిగా ఉంది."
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "temples",
+      "gestureType": "fingertip_twist",
+      "movement": "circular_temple"
+    }
+  },
+  {
+    "id": "STOMACH_PAIN",
+    "concept": "My stomach hurts",
+    "category": "medical",
+    "intent": "MEDICAL_SYMPTOM",
+    "priority": "important",
+    "supported": true,
+    "description": "Hands held over abdomen, rotating clockwise with arched posture.",
+    "avatarAnimation": "STOMACH_PAIN",
+    "suggestedReplies": [
+      "Did the stomach ache start after eating?",
+      "Is the pain sharp or cramping?",
+      "Please lie on the examination bed."
+    ],
+    "translations": {
+      "en": "My stomach hurts.",
+      "hi": "मेरे पेट में दर्द हो रहा है।",
+      "te": "నా కడుపులో నొప్పిగా ఉంది."
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "abdomen",
+      "gestureType": "curved_palms",
+      "movement": "abdomen_circle"
+    }
+  },
+  {
+    "id": "BLEEDING",
+    "concept": "I am bleeding from an injury",
+    "category": "medical",
+    "intent": "EMERGENCY",
+    "priority": "critical",
+    "supported": true,
+    "description": "Fingers fluttering downward from an arm or leg indicating flowing blood, followed by urgent point.",
+    "avatarAnimation": "BLEEDING",
+    "suggestedReplies": [
+      "Press this sterile dressing firmly against the wound.",
+      "Emergency trauma nurse is applying a bandage immediately.",
+      "Keep the injured limb elevated if possible."
+    ],
+    "translations": {
+      "en": "I am bleeding and need first aid.",
+      "hi": "खून बह रहा है, तुरंत प्राथमिक उपचार चाहिए।",
+      "te": "రక్తం కారుతోంది, వెంటనే ప్రథమ చికిత్స కావాలి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "limb_point",
+      "gestureType": "flow_flutter",
+      "movement": "downward_flow"
+    }
+  },
+  {
+    "id": "MEDICINE_QUERY",
+    "concept": "How should I take this medicine?",
+    "category": "medical",
+    "intent": "INFORMATION_REQUEST",
+    "priority": "normal",
+    "supported": true,
+    "description": "Right hand mimicking putting a pill in mouth, followed by questioning open palms.",
+    "avatarAnimation": "MEDICINE_QUERY",
+    "suggestedReplies": [
+      "Take 1 tablet after meals, twice a day with water.",
+      "Do not take this on an empty stomach.",
+      "The pharmacist will write clear times on the prescription."
+    ],
+    "translations": {
+      "en": "When and how should I take this medication?",
+      "hi": "यह दवा कब और कैसे लेनी है?",
+      "te": "ఈ మందు ఎప్పుడు, ఎలా వేసుకోవాలి?"
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "mouth_to_open",
+      "gestureType": "pinch_to_mouth",
+      "movement": "pill_intake"
+    }
+  },
+  {
+    "id": "ALLERGY_ALERT",
+    "concept": "I have an allergy to medicine",
+    "category": "medical",
+    "intent": "MEDICAL_SYMPTOM",
+    "priority": "urgent",
+    "supported": true,
+    "description": "Scratching forearm back and forth, then shaking head with crossed hands indicating negative reaction.",
+    "avatarAnimation": "ALLERGY_ALERT",
+    "suggestedReplies": [
+      "Which specific medicine or penicillin are you allergic to?",
+      "We will mark your chart with a red allergy band immediately.",
+      "Are you having any skin rashes or swelling?"
+    ],
+    "translations": {
+      "en": "I have a known medical allergy.",
+      "hi": "मुझे इस दवा से एलर्जी है।",
+      "te": "నాకు ఔషధ అలర్జీ ఉంది."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "forearm_scratch",
+      "gestureType": "scratch_arm",
+      "movement": "reciprocal_scratch"
+    }
+  },
+  {
+    "id": "SIT_DOWN",
+    "concept": "Please sit down",
+    "category": "medical",
+    "intent": "GENERAL_CONVERSATION",
+    "priority": "routine",
+    "supported": true,
+    "description": "Both open palms facing downward, moving downward gently in a calm welcoming motion.",
+    "avatarAnimation": "SIT_DOWN",
+    "suggestedReplies": [
+      "Thank you, I will sit.",
+      "Can I have a glass of water?",
+      "Where should I wait?"
+    ],
+    "translations": {
+      "en": "Please sit down.",
+      "hi": "कृपया बैठ जाइए।",
+      "te": "దయచేసి కూర్చోండి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "mid_torso",
+      "gestureType": "flat_downward_press",
+      "movement": "downward_push"
+    }
+  },
+  {
+    "id": "WAIT_MOMENT",
+    "concept": "Please wait a moment",
+    "category": "medical",
+    "intent": "GENERAL_CONVERSATION",
+    "priority": "routine",
+    "supported": true,
+    "description": "Raised open palm facing forward at shoulder level with gentle stillness.",
+    "avatarAnimation": "WAIT_MOMENT",
+    "suggestedReplies": [
+      "Understood, I will wait here.",
+      "How many minutes will it take?",
+      "Thank you."
+    ],
+    "translations": {
+      "en": "Please wait for a moment.",
+      "hi": "कृपया एक पल प्रतीक्षा करें।",
+      "te": "దయచేసి కాసేపు వేచి ఉండండి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "shoulder_height",
+      "gestureType": "palm_forward_halt",
+      "movement": "static_hold"
+    }
+  },
+  {
+    "id": "QUESTION_CONFUSED",
+    "concept": "I don't understand this concept",
+    "category": "college",
+    "intent": "ACADEMIC_CLARIFICATION",
+    "priority": "normal",
+    "supported": true,
+    "description": "Index finger tapped to forehead, then sweeping outward with open upturned palms and questioning head tilt.",
+    "avatarAnimation": "QUESTION_CONFUSED",
+    "suggestedReplies": [
+      "Which specific formula or step would you like me to re-explain?",
+      "Let's break this concept down with a simple visual example.",
+      "You can visit during office hours at 3:00 PM for one-on-one help."
+    ],
+    "translations": {
+      "en": "I do not understand this question or concept.",
+      "hi": "मुझे यह सवाल समझ में नहीं आया।",
+      "te": "నాకు ఈ ప్రశ్న అర్థం కాలేదు."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "forehead_to_open",
+      "gestureType": "forehead_flick",
+      "movement": "outward_open"
+    }
+  },
+  {
+    "id": "CLASSROOM_LOC",
+    "concept": "Where is the classroom or lab?",
+    "category": "college",
+    "intent": "LOCATION_REQUEST",
+    "priority": "normal",
+    "supported": true,
+    "description": "Two hands forming a box/room outline, followed by open palms turning side to side (where sign).",
+    "avatarAnimation": "CLASSROOM_LOC",
+    "suggestedReplies": [
+      "Room 302 is on the 3rd floor, right next to the elevator.",
+      "The computer lab is in Block B on the ground floor.",
+      "Follow the corridor down to the main library entrance."
+    ],
+    "translations": {
+      "en": "Where is this classroom or laboratory located?",
+      "hi": "यह क्लासरूम या लैब कहाँ पर है?",
+      "te": "ఈ క్లాస్‌రూమ్ లేదా ల్యాబ్ ఎక్కడ ఉంది?"
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "chest_level",
+      "gestureType": "box_boundary",
+      "movement": "box_then_open_where"
+    }
+  },
+  {
+    "id": "ATTENDANCE_ISSUE",
+    "concept": "Please mark my attendance",
+    "category": "college",
+    "intent": "PERMISSION_REQUEST",
+    "priority": "normal",
+    "supported": true,
+    "description": "Left palm flat like a register, right index finger drawing a checkmark across it.",
+    "avatarAnimation": "ATTENDANCE_ISSUE",
+    "suggestedReplies": [
+      "What is your roll number?",
+      "Your attendance has been recorded for this period.",
+      "Please submit your medical certificate for previous absence."
+    ],
+    "translations": {
+      "en": "Please check and mark my attendance.",
+      "hi": "कृपया मेरी उपस्थिति दर्ज करें।",
+      "te": "దయచేసి నా హాజరును నమోదు చేయండి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "left_palm_base",
+      "gestureType": "checkmark_draw",
+      "movement": "tick_motion"
+    }
+  },
+  {
+    "id": "EXAM_SCHEDULE",
+    "concept": "When is the exam timing?",
+    "category": "college",
+    "intent": "ACADEMIC_QUESTION",
+    "priority": "normal",
+    "supported": true,
+    "description": "Writing gesture on open left palm, followed by tapping index finger on wrist watch.",
+    "avatarAnimation": "EXAM_SCHEDULE",
+    "suggestedReplies": [
+      "The mid-semester exam begins tomorrow at 10:00 AM.",
+      "Exam hall tickets are available on the student portal.",
+      "The exam duration is 2 hours with 20 minutes extra reading time."
+    ],
+    "translations": {
+      "en": "When is the examination scheduled?",
+      "hi": "परीक्षा का समय और तारीख क्या है?",
+      "te": "పరీక్ష సమయం ఎప్పుడు?"
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "wrist_and_palm",
+      "gestureType": "pen_write_watch_tap",
+      "movement": "write_then_tap"
+    }
+  },
+  {
+    "id": "LEAVE_PERMISSION",
+    "concept": "I need permission for sick leave",
+    "category": "college",
+    "intent": "PERMISSION_REQUEST",
+    "priority": "normal",
+    "supported": true,
+    "description": "Flat hands pressed together in respect, then bowing slightly and presenting a leave letter motion.",
+    "avatarAnimation": "LEAVE_PERMISSION",
+    "suggestedReplies": [
+      "Please fill out the leave slip and have the HOD sign it.",
+      "Take care of your health; leave is approved for 2 days.",
+      "Ensure you collect missed class lecture notes from a classmate."
+    ],
+    "translations": {
+      "en": "I am requesting leave permission due to health reasons.",
+      "hi": "मुझे बीमारी के कारण छुट्टी की अनुमति चाहिए।",
+      "te": "అనారోగ్యం కారణంగా నాకు సెలవు అనుమతి కావాలి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "praying_present",
+      "gestureType": "namaste_forward",
+      "movement": "present_slip"
+    }
+  },
+  {
+    "id": "LIBRARY_CARD",
+    "concept": "How do I borrow this book?",
+    "category": "college",
+    "intent": "ACADEMIC_QUESTION",
+    "priority": "normal",
+    "supported": true,
+    "description": "Both hands opening like a book, then gesturing a card swipe at the counter.",
+    "avatarAnimation": "LIBRARY_CARD",
+    "suggestedReplies": [
+      "Scan your student ID card at the self-checkout kiosk.",
+      "You can borrow up to 3 books for 14 days.",
+      "Reference section books cannot be taken outside the library."
+    ],
+    "translations": {
+      "en": "How do I issue or return this library book?",
+      "hi": "यह लाइब्रेरी की किताब कैसे ले सकता हूँ?",
+      "te": "ఈ పుస్తకాన్ని లైబ్రరీ నుండి ఎలా తీసుకోవాలి?"
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "chest_level",
+      "gestureType": "book_open_shut",
+      "movement": "open_palms_hinged"
+    }
+  },
+  {
+    "id": "LOST_ID",
+    "concept": "I lost my ID card",
+    "category": "public_service",
+    "intent": "LOST_DOCUMENT",
+    "priority": "important",
+    "supported": true,
+    "description": "Rectangular card outline drawn on chest pocket, then hands dropping open empty showing loss.",
+    "avatarAnimation": "LOST_ID",
+    "suggestedReplies": [
+      "Do you have a copy of your Aadhaar card or phone number?",
+      "Fill out Form B-2 at counter 4 to apply for a duplicate ID.",
+      "Did you file a lost property report at the reception?"
+    ],
+    "translations": {
+      "en": "I have lost my official identity card.",
+      "hi": "मेरा पहचान पत्र (आईडी कार्ड) खो गया है।",
+      "te": "నా గుర్తింపు కార్డు (ఐడీ కార్డ్) పోయింది."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "chest_pocket",
+      "gestureType": "card_frame_to_empty",
+      "movement": "outline_then_drop"
+    }
+  },
+  {
+    "id": "NEED_REPLACEMENT",
+    "concept": "I need a replacement document",
+    "category": "public_service",
+    "intent": "INFORMATION_REQUEST",
+    "priority": "normal",
+    "supported": true,
+    "description": "Right hand passing over left palm flipping imaginary page, then pointing forward asking for a new one.",
+    "avatarAnimation": "NEED_REPLACEMENT",
+    "suggestedReplies": [
+      "Please provide your application reference number.",
+      "Replacement cards take 3 working days to process.",
+      "You will receive an SMS when it is ready for collection."
+    ],
+    "translations": {
+      "en": "I need a replacement or duplicate document.",
+      "hi": "मुझे नया प्रतिस्थापन दस्तावेज़ चाहिए।",
+      "te": "నాకు కొత్త ప్రత్యామ్నాయ పత్రం కావాలి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "left_palm_flip",
+      "gestureType": "document_exchange",
+      "movement": "flip_forward"
+    }
+  },
+  {
+    "id": "POLICE_ASSIST",
+    "concept": "I need police or security assistance",
+    "category": "public_service",
+    "intent": "AUTHORITY_REQUEST",
+    "priority": "urgent",
+    "supported": true,
+    "description": "Right hand touching forehead in salute, then pointing urgently with both hands.",
+    "avatarAnimation": "POLICE_ASSIST",
+    "suggestedReplies": [
+      "Security officers are right outside this desk.",
+      "Are you in immediate physical danger?",
+      "Please come with me to the officer help desk."
+    ],
+    "translations": {
+      "en": "I need police or security officer assistance.",
+      "hi": "मुझे पुलिस या सुरक्षा सहायता की आवश्यकता है।",
+      "te": "నాకు పోలీసు లేదా భద్రతా సహాయం కావాలి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "temple_salute",
+      "gestureType": "salute_point",
+      "movement": "salute_then_point"
+    }
+  },
+  {
+    "id": "OFFICE_COUNTER",
+    "concept": "Which counter handles this form?",
+    "category": "public_service",
+    "intent": "LOCATION_REQUEST",
+    "priority": "normal",
+    "supported": true,
+    "description": "Holding a sheet of paper gesture, then pointing along rows of counters with questioning expression.",
+    "avatarAnimation": "OFFICE_COUNTER",
+    "suggestedReplies": [
+      "Citizen certificate verification is at Counter 7.",
+      "Take a queue token from the touch kiosk near the entrance.",
+      "Counters 3 and 4 handle payment and fee collection."
+    ],
+    "translations": {
+      "en": "Which counter handles this specific service or form?",
+      "hi": "यह फॉर्म किस काउंटर पर जमा होगा?",
+      "te": "ఈ ఫారమ్ ఏ కౌంటర్‌లో ఇవ్వాలి?"
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "forward_counters",
+      "gestureType": "document_pointing",
+      "movement": "sweep_point"
+    }
+  },
+  {
+    "id": "PAYMENT_FEE",
+    "concept": "Where do I pay the application fee?",
+    "category": "public_service",
+    "intent": "INFORMATION_REQUEST",
+    "priority": "normal",
+    "supported": true,
+    "description": "Thumb rubbing index and middle fingers (money sign) followed by pointing to cash counter.",
+    "avatarAnimation": "PAYMENT_FEE",
+    "suggestedReplies": [
+      "You can pay via UPI, QR code, or cash at Counter 2.",
+      "The government processing fee is ₹50.",
+      "Please collect your official stamped receipt after payment."
+    ],
+    "translations": {
+      "en": "Where should I pay the service fee?",
+      "hi": "आवेदन शुल्क कहाँ जमा करना है?",
+      "te": "దరఖాస్తు రుసుము ఎక్కడ చెల్లించాలి?"
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "chest_level",
+      "gestureType": "money_rub",
+      "movement": "rub_fingers"
+    }
+  },
+  {
+    "id": "HELLO",
+    "concept": "Hello / Namaste",
+    "category": "universal",
+    "intent": "GREETING",
+    "priority": "routine",
+    "supported": true,
+    "description": "Palms joined together at chest level in traditional Indian Namaste greeting with a gentle nod.",
+    "avatarAnimation": "HELLO",
+    "suggestedReplies": [
+      "Hello! Welcome. How can I help you today?",
+      "Namaste! Please let me know what you need.",
+      "Good day! I am here to assist you."
+    ],
+    "translations": {
+      "en": "Hello / Namaste. Welcome.",
+      "hi": "नमस्ते! मैं आपकी क्या सहायता कर सकता हूँ?",
+      "te": "నమస్తే! నేను మీకు ఎలా సహాయపడగలను?"
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "center_chest",
+      "gestureType": "namaste_fold",
+      "movement": "gentle_bow"
+    }
+  },
+  {
+    "id": "THANK_YOU",
+    "concept": "Thank you very much",
+    "category": "universal",
+    "intent": "GENERAL_CONVERSATION",
+    "priority": "routine",
+    "supported": true,
+    "description": "Flat right hand fingertips touching chin/lips, then moving forward smoothly toward the other person.",
+    "avatarAnimation": "THANK_YOU",
+    "suggestedReplies": [
+      "You are very welcome! Take care.",
+      "Glad I could assist you.",
+      "Feel free to ask if you need anything else."
+    ],
+    "translations": {
+      "en": "Thank you very much.",
+      "hi": "आपका बहुत-बहुत धन्यवाद।",
+      "te": "మీకు చాలా ధన్యవాదాలు."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "chin_to_front",
+      "gestureType": "flat_chin_out",
+      "movement": "forward_extend"
+    }
+  },
+  {
+    "id": "NEED_HELP",
+    "concept": "I need help immediately",
+    "category": "universal",
+    "intent": "HELP_REQUEST",
+    "priority": "important",
+    "supported": true,
+    "description": "Closed right fist with thumb up, placed onto flat open left palm and lifted upward together.",
+    "avatarAnimation": "NEED_HELP",
+    "suggestedReplies": [
+      "I am here with you. What kind of help do you need?",
+      "Do you need a medical staff, security, or directions?",
+      "Please explain or point to what is wrong."
+    ],
+    "translations": {
+      "en": "I need help immediately.",
+      "hi": "मुझे तुरंत मदद चाहिए।",
+      "te": "నాకు వెంటనే సహాయం కావాలి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "both",
+      "handPosition": "chest_center",
+      "gestureType": "fist_on_palm_lift",
+      "movement": "upward_lift"
+    }
+  },
+  {
+    "id": "YES",
+    "concept": "Yes / Correct",
+    "category": "universal",
+    "intent": "CLARIFICATION",
+    "priority": "routine",
+    "supported": true,
+    "description": "Closed right fist nodding up and down like a head nod.",
+    "avatarAnimation": "YES",
+    "suggestedReplies": [
+      "Understood. We will proceed.",
+      "Great, thank you for confirming.",
+      "Let's move to the next step."
+    ],
+    "translations": {
+      "en": "Yes, that is correct.",
+      "hi": "हाँ, बिल्कुल सही।",
+      "te": "అవును, సరైనది."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "shoulder_height",
+      "gestureType": "fist_nod",
+      "movement": "vertical_nod"
+    }
+  },
+  {
+    "id": "NO",
+    "concept": "No / Incorrect",
+    "category": "universal",
+    "intent": "CLARIFICATION",
+    "priority": "routine",
+    "supported": true,
+    "description": "Index, middle finger and thumb snapping closed horizontally with head shake.",
+    "avatarAnimation": "NO",
+    "suggestedReplies": [
+      "Understood. Let me ask differently.",
+      "Okay, we will cancel that option.",
+      "Can you clarify what you mean?"
+    ],
+    "translations": {
+      "en": "No, that is not correct.",
+      "hi": "नहीं, यह नहीं है।",
+      "te": "కాదు, ఇది సరైనది కాదు."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "shoulder_height",
+      "gestureType": "fingers_snap_close",
+      "movement": "horizontal_snap"
+    }
+  },
+  {
+    "id": "WATER",
+    "concept": "I need drinking water",
+    "category": "universal",
+    "intent": "HELP_REQUEST",
+    "priority": "routine",
+    "supported": true,
+    "description": "Three middle fingers forming W-shape tapped against chin/lips twice.",
+    "avatarAnimation": "WATER",
+    "suggestedReplies": [
+      "Here is a bottle of fresh drinking water.",
+      "The water dispenser is right around the corner.",
+      "Let me get a clean glass for you."
+    ],
+    "translations": {
+      "en": "I need clean drinking water.",
+      "hi": "मुझे पीने का पानी चाहिए।",
+      "te": "నాకు త్రాగునీరు కావాలి."
+    },
+    "landmarksSignature": {
+      "primaryHand": "right",
+      "handPosition": "chin_tap",
+      "gestureType": "w_hand_mouth",
+      "movement": "tap_chin"
+    }
+  }
+]
